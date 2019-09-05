@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom'
 import './style.scss'
 import axios from 'axios'
 
+
 class App extends React.Component {
   constructor() {
     super()
@@ -21,7 +22,7 @@ class App extends React.Component {
   handleSubmit() {
     console.log(this.state.url)
 
-    const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjN9.fuAel8s1jcwpswqcDzZK60KQcWUz52azawHZk5-9jQ0'
+    const token = process.env.TOKEN
     axios.post('/api/documents/', this.state, {
       headers: { Authorization: `Bearer ${token}` }
     })
