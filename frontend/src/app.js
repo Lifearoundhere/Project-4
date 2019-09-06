@@ -5,6 +5,7 @@ import Show from './components/pages/show'
 import Login from './components/auth/login'
 import Register from './components/auth/register'
 import Navbar from './components/common/navbar'
+import Footer from './components/common/footer'
 import { HashRouter, Route, Switch } from 'react-router-dom'
 
 class App extends React.Component {
@@ -26,6 +27,7 @@ class App extends React.Component {
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
         </Switch>
+        <Footer />
       </HashRouter>
     )
   }
