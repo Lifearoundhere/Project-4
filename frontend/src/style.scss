@@ -1,1 +1,22 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.ImageBackground {
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
+
 @import '~bulma';
