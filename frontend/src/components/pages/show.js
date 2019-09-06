@@ -6,7 +6,8 @@ class Show extends React.Component {
   constructor() {
     super()
     this.state = {
-      url: null
+      url: null,
+      document: '<div><div>'
     }
     this.handleKeyUpChange = this.handleKeyUpChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -33,6 +34,7 @@ class Show extends React.Component {
 
   }
   render() {
+    <div>loading...</div>
     return (
       <div>
         <h1>This page works BTW</h1>
@@ -48,6 +50,7 @@ class Show extends React.Component {
           </div>
           <p className="help">Paste URL above</p>
         </div>
+        <div dangerouslySetInnerHTML={{ __html: this.state.document }} />
       </div>
     )
   }
