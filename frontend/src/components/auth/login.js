@@ -38,7 +38,8 @@ class Login extends React.Component {
       <section className="section ImageBackground" style={{ backgroundImage: `url(${BackgroundImage})` }} >
         <div className="container">
           <h1 className="title">Login</h1>
-          <div className="columns is-vcentered is-centered">
+
+          <div className="columns middle-man is-vcentered is-centered">
             <div className="column">
             </div>
             <div className="column has-text-centered is-vertical-center ">

@@ -1,7 +1,7 @@
 import jwt from 'jsonwebtoken'
 
 class Auth {
-  static setToken(token, message, img = '') {
+  static setToken(token, message) {
     localStorage.setItem('token', token)
     localStorage.setItem('message', message)
   }

@@ -6,6 +6,7 @@ from .models import Document
 class DocumentSerializers(serializers.ModelSerializer):
 
     user = UserSerializer(read_only=True)
+    document = serializers.JSONField()
 
     class Meta:
         model = Document

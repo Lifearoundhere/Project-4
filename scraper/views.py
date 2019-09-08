@@ -6,6 +6,8 @@ from .serializers import DocumentSerializers
 from .models import Document
 from .permissions import IsOwnerOrReadOnly
 from .soup.parser import html_parser
+from .soup.image_parser import detect_text_uri
+import json
 # Create your views here.
 
 
@@ -19,7 +21,7 @@ class DocumentList(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        request.data['document'] = str(html_parser(request.data['url']))
+        request.data['document'] = detect_text_uri(request.data['url'])
         serializer = DocumentSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save(user=request.user)

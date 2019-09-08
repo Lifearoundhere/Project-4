@@ -8,4 +8,5 @@ def html_parser(webpage, lib='lxml'):
     """
     source = requests.get(webpage).text
     soup = BeautifulSoup(source, lib)
-    return soup
+    image = soup.find('img')['src']
+    return image

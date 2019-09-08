@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+
 const NavbarItem = props => (
   <a className="navbar-item is-capitalized" href={`#${props.page}`}>
     {props.page}
