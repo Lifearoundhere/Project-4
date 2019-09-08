@@ -1,7 +1,7 @@
 import React, { useRef } from 'react'
 import axios from 'axios'
 import Auth from '../../lib/Auth'
-import { Markup } from 'interweave'
+
 class Show extends React.Component {
   constructor() {
     super()
@@ -52,9 +52,7 @@ class Show extends React.Component {
           <p className="help">Paste URL above</p>
         </div>
         <img src={this.state.url}></img>
-        <div className="table">
-          <Markup content={this.state.document} className="table is-bordered" />
-        </div>
+
       </div>
     )
   }
