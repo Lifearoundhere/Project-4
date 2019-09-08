@@ -1,7 +1,8 @@
 {
   "python.pythonPath": "/Users/p/.local/share/virtualenvs/project-4-CrMZnFoY/bin/python",
-  "cSpell.words": [
-    "lxml",
-    "unsplash"
-  ]
+  "cSpell.words": ["lxml", "unsplash"],
+  "files.exclude": {
+    "\"**/__pycache__\"": true,
+    "**/*.pyc\"": { "when": "$(basename).py" }
+  }
 }

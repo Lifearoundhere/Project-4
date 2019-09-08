@@ -18,9 +18,8 @@ html {
   display: flex;
   align-items: center;
 }
-
-@import '~bulma';
-
 .middle-man {
   height: 85vh;
 }
+@import '~react-vis/dist/style';
+@import '~bulma';

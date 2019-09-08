@@ -20,4 +20,5 @@ def detect_text_uri(uri):
     # Performs label detection on the image file
     response = client.label_detection(image=image)
     labels = response.label_annotations
+
     return MessageToJson(response)
