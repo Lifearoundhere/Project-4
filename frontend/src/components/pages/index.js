@@ -2,7 +2,12 @@ import React from 'react'
 import axios from 'axios'
 import Auth from '../../lib/Auth'
 import { CSVLink, CSVDownload } from 'react-csv'
-class Show extends React.Component {
+
+const ConsoleLog = ({ children }) => {
+  console.log(children);
+  return false;
+};
+class Index extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -93,8 +98,9 @@ class Show extends React.Component {
               <div key={item.id} className="box">
                 <article className="media">
                   <div className="media-left">
-                    <figure className="image is-128x128">
-                      <img src={item.url} alt="Image" />
+                    <figure className="image"
+                      style={{ backgroundImage: `url(${item.url})` }}
+                      alt={item.id}>
                     </figure>
                   </div>
                   <div className="content">
@@ -119,4 +125,4 @@ class Show extends React.Component {
     )
   }
 }
-export default Show
+export default Index

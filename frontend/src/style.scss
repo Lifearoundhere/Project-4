@@ -40,6 +40,15 @@ html {
   margin-right: 5px;
   padding: 5px 10px;
 }
+figure,
+.image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  border-radius: 3%;
+}
 
 @import '~react-vis/dist/style';
 @import '~bulma';
