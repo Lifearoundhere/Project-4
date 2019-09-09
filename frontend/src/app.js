@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import './style.scss'
 import Show from './components/pages/show'
+import Index from './components/pages/index'
 import Login from './components/auth/login'
 import Register from './components/auth/register'
 import Navbar from './components/common/navbar'
@@ -17,12 +18,13 @@ class App extends React.Component {
   }
 
   render() {
-    const pages = ['documents', 'login', 'register']
+    const pages = ['documents', 'index', 'login', 'register']
     const color = 'warning'
     return (
       <HashRouter>
         <Navbar pages={pages} color={color} />
         <Switch>
+          <Route path='/index' component={Index} />
           <Route path='/documents' component={Show} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />

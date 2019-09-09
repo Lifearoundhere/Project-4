@@ -21,5 +21,25 @@ html {
 .middle-man {
   height: 85vh;
 }
+.input-tag__tags {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.input-tag__tags li {
+  align-items: center;
+  background: #3271ac;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  font-weight: 300;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  padding: 5px 10px;
+}
+
 @import '~react-vis/dist/style';
 @import '~bulma';
