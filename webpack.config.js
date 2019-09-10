@@ -1,6 +1,8 @@
 const path = require('path')
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+const workboxPlugin = require('workbox-webpack-plugin')
+const WebpackPwaManifest = require('webpack-pwa-manifest')
 
 module.exports = {
   entry: './src/app.js',
@@ -36,6 +38,29 @@ module.exports = {
       template: 'src/index.html',
       filename: 'index.html',
       inject: 'body'
+    }),
+    new workboxPlugin.GenerateSW({
+      swDest: 'sw.js',
+      clientsClaim: true,
+      skipWaiting: true
+    }),
+    new WebpackPwaManifest({
+      name: 'Image Analyser',
+      short_name: 'Imgyser',
+      description: 'Google Vision API driven App',
+      background_color: '#cc3f43',
+      theme_color: '#eeeff1',
+      display: 'minimal-ui',
+      orientation: 'portrait',
+      Scope: '/',
+      start_url: '../#/home',
+
+      icons: [
+        {
+          src: path.resolve('frontend/src/assets/image.png'),
+          sizes: [96, 128, 192, 256, 384, 512] // multiple sizes
+        }
+      ]
     })
   ]
 }

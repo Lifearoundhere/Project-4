@@ -76,6 +76,7 @@ class Create extends React.Component {
   }
   dataParser() {
     const graphData = JSON.parse(this.state.document)
+    if (graphData.error) return this.setState({ error: graphData.error })
     const domain = graphData.labelAnnotations.map((value) => {
       return { name: value.description, domain: [0, 1] }
     })
