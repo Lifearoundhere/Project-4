@@ -19,7 +19,8 @@ class DocumentList(APIView):
         return Response(serializer.data)
 
     def post(self, request):
-        request.data['document'] = detect_text_uri(request.data['url'], request.data['reqType])
+        request.data['document'] = detect_text_uri(
+            request.data['url'], request.data['reqType'])
         serializer = DocumentSerializers(data=request.data)
         if serializer.is_valid():
             serializer.save(user=request.user)

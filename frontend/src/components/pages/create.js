@@ -54,10 +54,12 @@ class Create extends React.Component {
     this.setState({ reqType: e.target.value })
   }
   handleKeyUpChange(e) {
-    regex.test(e.target.value) ? this.setState({ badUrl: true }) : this.setState({ badUrl: false })
+    if (regex.regex.test(e.target.value)) {
+      this.setState({ url: e.target.value, badUrl: false })
+    } else {
+      this.setState({ badUrl: true })
+    }
 
-    console.log(e.target.value)
-    this.setState({ url: e.target.value })
   }
   handleSubmit() {
 
@@ -109,7 +111,7 @@ class Create extends React.Component {
               <button className="button is-primary"
                 onClick={this.handleSubmit}
               >Submit</button>
-              {this.state.badUrl && <p class="help">Invalid URL</p>}
+              {this.state.badUrl && <p className="help">Invalid URL</p>}
             </div>
           </div>
         </div>
