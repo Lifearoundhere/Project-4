@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { withRouter } from 'react-router-dom'
 
 
 const NavbarItem = props => (
@@ -19,7 +20,7 @@ const NavbarBurger = props => (
   </button>
 )
 
-export default class Navbar extends React.Component {
+class Navbar extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -27,6 +28,7 @@ export default class Navbar extends React.Component {
     }
     this.toggleMenu = this.toggleMenu.bind(this)
   }
+
   toggleMenu() {
     this.setState({
       activeMenu: !this.state.activeMenu
@@ -36,9 +38,9 @@ export default class Navbar extends React.Component {
     const { pages, color } = this.props
     const navbarItems = pages.map(page => <NavbarItem page={page} key={page} />)
     return (
-      <nav className={`navbar is-fixed-top is-${color}`}>
+      <nav className={`navbar is-fixed-top is-${color}`} ref={this.refOfPage}>
         <div className="navbar-brand">
-          <NavbarItem page="logo" />
+          <NavbarItem page="home" />
           <NavbarBurger
             active={this.state.activeMenu}
             toggleMenu={this.toggleMenu}
@@ -57,3 +59,5 @@ Navbar.propTypes = {
   pages: PropTypes.array.isRequired,
   color: PropTypes.string
 }
+
+export default withRouter(Navbar)

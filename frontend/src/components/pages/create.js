@@ -3,14 +3,17 @@ import axios from 'axios'
 import Auth from '../../lib/Auth'
 import { format } from 'd3-format'
 import { RadarChart } from 'react-vis'
+import regex from '../../lib/regex-weburl'
 
+console.log('re', regex)
 
 const wideFormat = format('.3r')
-class Show extends React.Component {
+class Create extends React.Component {
   constructor() {
     super()
     this.state = {
       url: null,
+      badUrl: null,
       document: '',
       showGraph: false,
       graphPlotData: [
@@ -42,11 +45,17 @@ class Show extends React.Component {
     }
 
     this.handleKeyUpChange = this.handleKeyUpChange.bind(this)
+    this.handleSelectChange = this.handleSelectChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.dataParser = this.dataParser.bind(this)
   }
-
+  handleSelectChange(e) {
+    console.log(e.target.value)
+    this.setState({ reqType: e.target.value })
+  }
   handleKeyUpChange(e) {
+    regex.test(e.target.value) ? this.setState({ badUrl: true }) : this.setState({ badUrl: false })
+
     console.log(e.target.value)
     this.setState({ url: e.target.value })
   }
@@ -80,62 +89,79 @@ class Show extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h1>This page works BTW</h1>
-          <div className="field">
-            <label className="label">URL</label>
-            <div className="control">
+          <div className="box">
+            <div className="field is-horizontal">
+              <label className="label">URL: </label>
               <input className="input" type="text" placeholder="paste URL here"
                 onKeyUp={this.handleKeyUpChange}
               />
+              <div className="select is-fullwidth">
+                <select onChange={this.handleSelectChange}>
+                  <option defaultValue value="label">Label</option>
+                  <option defaultValue value="properties">Image Properties</option>
+                  <option value="faces">Face Recognition</option>
+                  <option value="text">OCR font</option>
+                  <option value="handwriting">OCR handwritten</option>
+                  <option value="Web">Web Tracing</option>
+                </select>
+              </div>
+
               <button className="button is-primary"
                 onClick={this.handleSubmit}
               >Submit</button>
+              {this.state.badUrl && <p class="help">Invalid URL</p>}
             </div>
-            <p className="help">Paste URL above</p>
           </div>
         </div>
-        <div className="container">
-          <img src={this.state.url}></img>
-        </div>
-        <div className="container is-fluid is-danger">
+        <div className="columns">
+          <div className="column">
+            <div className="container">
+              <img src={this.state.url}></img>
+            </div>
+          </div>
+          <div className="column"></div>
 
-          {this.state.showGraph &&
-            <RadarChart
-              data={this.state.graphPlotData}
-              tickFormat={t => wideFormat(t)}
-              startingAngle={0}
-              domains={this.state.domain}
-              width={500}
-              height={500}
-              margin={{ left: 100, right: 100, top: 100, bottom: 100 }}
-              colorType="literal"
-              style={{
-                axes: {
-                  line: {
-                    fillOpacity: 0.8,
-                    strokeWidth: 0.5,
-                    strokeOpacity: 0.8
+
+          <div className="container is-fluid is-danger">
+
+            {this.state.showGraph &&
+              <RadarChart
+                data={this.state.graphPlotData}
+                tickFormat={t => wideFormat(t)}
+                startingAngle={0}
+                domains={this.state.domain}
+                width={500}
+                height={500}
+                margin={{ left: 100, right: 100, top: 100, bottom: 100 }}
+                colorType="literal"
+                style={{
+                  axes: {
+                    line: {
+                      fillOpacity: 0.8,
+                      strokeWidth: 0.5,
+                      strokeOpacity: 0.8
+                    },
+                    ticks: {
+                      fillOpacity: 0,
+                      strokeOpacity: 0
+                    },
+                    text: {}
                   },
-                  ticks: {
-                    fillOpacity: 0,
-                    strokeOpacity: 0
+                  labels: {
+                    fontSize: 10
                   },
-                  text: {}
-                },
-                labels: {
-                  fontSize: 10
-                },
-                polygons: {
-                  strokeWidth: 1,
-                  strokeOpacity: 0.8,
-                  fillOpacity: 0.8
+                  polygons: {
+                    strokeWidth: 1,
+                    strokeOpacity: 0.8,
+                    fillOpacity: 0.8
+                  }
                 }
-              }
-              }
-            />}
+                }
+              />}
+          </div>
         </div>
       </section >
     )
   }
 }
-export default Show
+export default Create

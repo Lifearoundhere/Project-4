@@ -1,4 +1,3 @@
-import io
 import os
 from google.cloud.vision import types
 from google.cloud import vision
@@ -26,7 +25,7 @@ def detect_text_uri(uri, use_case='label'):
     elif use_case == 'text':
         response = client.text_detection(image=image)
         return MessageToJson(response)
-    elif use_case == 'handwiting':
+    elif use_case == 'handwriting':
         response = client.document_text_detection(image=image)
         return MessageToJson(response)
     elif use_case == 'Web':

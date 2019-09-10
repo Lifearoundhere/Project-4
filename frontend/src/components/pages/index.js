@@ -4,9 +4,9 @@ import Auth from '../../lib/Auth'
 import { CSVLink, CSVDownload } from 'react-csv'
 
 const ConsoleLog = ({ children }) => {
-  console.log(children);
-  return false;
-};
+  console.log(children)
+  return false
+}
 class Index extends React.Component {
   constructor() {
     super()
@@ -97,7 +97,7 @@ class Index extends React.Component {
             {this.pageFilter().map(item =>
               <div key={item.id} className="box">
                 <article className="media">
-                  <div className="media-left">
+                  <div className="media-left hover03">
                     <figure className="image"
                       style={{ backgroundImage: `url(${item.url})` }}
                       alt={item.id}>
