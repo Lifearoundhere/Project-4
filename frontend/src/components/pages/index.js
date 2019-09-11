@@ -3,10 +3,7 @@ import axios from 'axios'
 import Auth from '../../lib/Auth'
 import { CSVLink, CSVDownload } from 'react-csv'
 
-const ConsoleLog = ({ children }) => {
-  console.log(children)
-  return false
-}
+
 class Index extends React.Component {
   constructor() {
     super()
