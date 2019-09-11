@@ -7,7 +7,8 @@ class Login extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      formData: {}
+      formData: {},
+      error: false
     }
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
@@ -24,11 +25,11 @@ class Login extends React.Component {
     axios.post('/api/register/', this.state.formData)
       .then(res => {
         Auth.setToken(res.data.token, res.data.message) // store the token in localStorage
-
+        this.props.history.push(`/login`)
       })
-      .catch(() => {
+      .catch(err => {
         Auth.removeToken() // remove the token from localStorage
-        this.setState({ error: 'Invalid credentials' })
+        this.setState({ error: 'Invalid Credentials' })
       })
 
   }
@@ -99,10 +100,11 @@ class Login extends React.Component {
                   <button className="button is-success"
                     onClick={this.handleSubmit}
                   >
-                    Login
+                    Register
                   </button>
                 </p>
               </div>
+              {this.state.error && <p className="has-text-danger" >{this.state.error}</p>}
             </div>
           </div>
         </div>

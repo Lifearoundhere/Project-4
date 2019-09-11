@@ -69,6 +69,8 @@ class Index extends React.Component {
       this.setState(prevState => ({
         boxes: [...prevState.boxes, box]
       }))
+      const csv = this.state.boxes.map(item => item.graphPlotData[0])
+      this.setState({ csv, loaded: true })
     })
   }
 
@@ -78,16 +80,15 @@ class Index extends React.Component {
     return (
       <section className="section">
         <div className="container">
-          <h1>This page is the index BTW</h1>
           <div className="field">
             <label className="label">search</label>
             <div className="control">
               <input className="input" type="text" placeholder="search"
                 onKeyUp={this.handleKeyUpChange}
               />
-              {this.state.loaded && <CSVLink data={this.state.boxes.graphPlotData}>Download me</CSVLink>}
             </div>
           </div>
+          {this.state.loaded && <CSVLink className="button is-primary" data={this.state.csv}>Download CSV</CSVLink>}
         </div>
         <section className="section">
           <div className="container">

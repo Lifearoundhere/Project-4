@@ -8,6 +8,7 @@ import Login from './components/auth/login'
 import Register from './components/auth/register'
 import Navbar from './components/common/navbar'
 import Footer from './components/common/footer'
+import Auth from './lib/Auth'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 function init() {
@@ -22,8 +23,9 @@ function init() {
   }
 }
 init()
-const pages = ['analyse', 'index', 'login', 'register']
+let pages = ['analyse', 'index', 'login', 'register']
 const color = 'warning'
+if (Auth.isAuthenticated()) pages = ['analyse', 'index']
 
 const HomeContainer = () => (
   <div>

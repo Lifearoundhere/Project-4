@@ -17,6 +17,7 @@ class Create extends React.Component {
       url: null,
       badUrl: null,
       document: '',
+      showFace: false,
       showGraph: false,
       graphPlotData: [
         {
@@ -43,7 +44,8 @@ class Create extends React.Component {
         { name: 'Font', domain: [0, 1] },
         { name: 'Screenshot', domain: [0, 1] }
       ],
-      fullTextAnnotation: false
+      fullTextAnnotation: false,
+      reqType: 'label'
 
     }
 
@@ -81,7 +83,7 @@ class Create extends React.Component {
     const graphData = JSON.parse(this.state.document)
     if (graphData.error) return this.setState({ error: graphData.error })
     if (graphData.fullTextAnnotation) return this.setState({ fullTextAnnotation: graphData.fullTextAnnotation })
-    if (graphData.faceAnnotations) return this.setState({ faceAnnotations: graphData.faceAnnotations })
+    if (graphData.faceAnnotations) return this.setState({ faceAnnotations: graphData.faceAnnotations, showFace: true })
     const domain = graphData.labelAnnotations.map((value) => {
       return { name: value.description, domain: [0, 1] }
     })
@@ -96,10 +98,12 @@ class Create extends React.Component {
     console.log('state after update', this.state)
     return (
       <section className="section">
-        <div className="container">
+        <div className="container create">
           <div className="box">
             <div className="field is-horizontal">
-              <label className="label">URL: </label>
+              <div className="inputPadding">
+                <label className="label">URL: </label>
+              </div>
               <input className="input" type="text" placeholder="paste URL here"
                 onKeyUp={this.handleKeyUpChange}
               />
@@ -117,9 +121,9 @@ class Create extends React.Component {
               <button className="button is-primary"
                 onClick={this.handleSubmit}
               >Submit</button>
-              {this.state.badUrl && <p className="help">Invalid URL</p>}
             </div>
           </div>
+          {this.state.badUrl && <p className="help has-text-danger">Invalid URL</p>}
         </div>
         <div className="columns">
           <div className="column">
@@ -135,7 +139,7 @@ class Create extends React.Component {
                 <h2 className="title">{this.state.fullTextAnnotation.text.replace(/\n/ig, '\n') || null}</h2>
                 <ConsoleLog>{this.state.fullTextAnnotation.text}</ConsoleLog>
               </div>}
-              {this.state.faceAnnotations && <Face attributes={this.state.faceAnnotations} />}
+              {this.state.showFace && <Face attributes={this.state.faceAnnotations} />}
               {this.state.showGraph &&
                 <RadarChart
                   data={this.state.graphPlotData}

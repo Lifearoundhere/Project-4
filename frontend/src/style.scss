@@ -180,5 +180,15 @@ figure,
   }
 }
 
+.tile {
+  margin: 10px;
+  padding: 10px;
+}
+.create {
+  min-height: calc(100vh - 50%);
+}
+.inputPadding {
+  padding: 10px;
+}
 @import '~react-vis/dist/style';
 @import '~bulma';

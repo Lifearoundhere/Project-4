@@ -1,25 +1,24 @@
 import React from 'react'
 
-const Face = (props) => {
-  console.log(props.attributes)
-  return (
-    <div className='card'>{props.attributes.map(item => {
-      <div>
-        <p>rollAngle {item.rollAngle}</p>
-        <p>panAngle {item.panAngle}</p>
-        <p>tiltAngle {item.tiltAngle}</p>
-        <p>Detection Confidence {item.detectionConfidence}</p>
-        <p>Landmarking Confidence {item.landmarkingConfidence}</p>
-        <p>joyLikelihood {item.joyLikelihood}</p>
-        <p>sorrowLikelihood {item.sorrowLikelihood}</p>
-        <p>angerLikelihood {item.angerLikelihood}</p>
-        <p>surpriseLikelihood {item.surpriseLikelihood}</p>
-        <p>underExposedLikelihood {item.underExposedLikelihood}</p>
-        <p>blurredLikelihood {item.blurredLikelihood}</p>
-        <p>Headwear Likelihood {item.headwearLikelihood}</p>
-      </div>
-    })}
+const Face = (props) => (
+  <div className='tile'>{props.attributes.map(item =>
+    <div>
+      <p>Has the following results: </p>
+      <p key={item.rollAngle} >RollAngle: {item.rollAngle}</p>
+      <p key={item.rollAngle} >PanAngle: {item.panAngle}</p>
+      <p key={item.rollAngle} >Tilt Angle: {item.tiltAngle}</p>
+      <p key={item.rollAngle} >Detection: Confidence {item.detectionConfidence}</p>
+      <p key={item.rollAngle} >Landmarking: Confidence {item.landmarkingConfidence}</p>
+      <p key={item.rollAngle} >Joy Likelihood: {item.joyLikelihood}</p>
+      <p key={item.rollAngle} >Sorrow Likelihood: {item.sorrowLikelihood}</p>
+      <p key={item.rollAngle} >Anger Likelihood: {item.angerLikelihood}</p>
+      <p key={item.rollAngle} >Surprise Likelihood: {item.surpriseLikelihood}</p>
+      <p key={item.rollAngle} >Under Exposed Likelihood: {item.underExposedLikelihood}</p>
+      <p key={item.rollAngle} >Blurred Likelihood: {item.blurredLikelihood}</p>
+      <p key={item.rollAngle} >Headwear Likelihood: {item.headwearLikelihood}</p>
     </div>
-  )
-}
+  )}
+  </div>
+)
+
 export default Face
