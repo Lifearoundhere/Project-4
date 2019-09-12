@@ -11,18 +11,6 @@ import Footer from './components/common/footer'
 import Auth from './lib/Auth'
 import { HashRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-function init() {
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('sw.js').then(registration => {
-        console.log('SW registered: ', registration)
-      }).catch(registrationError => {
-        console.log('SW registration failed: ', registrationError)
-      })
-    })
-  }
-}
-init()
 let pages = ['analyse', 'index', 'login', 'register']
 const color = 'warning'
 if (Auth.isAuthenticated()) pages = ['analyse', 'index']
