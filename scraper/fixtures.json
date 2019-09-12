@@ -1,0 +1,156 @@
+[
+{
+  "model": "scraper.document",
+  "pk": 88,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9770219326019287,\n      \"topicality\": 0.9770219326019287\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.924447238445282,\n      \"topicality\": 0.924447238445282\n    },\n    {\n      \"mid\": \"/m/03scnj\",\n      \"description\": \"Line\",\n      \"score\": 0.828646183013916,\n      \"topicality\": 0.828646183013916\n    },\n    {\n      \"mid\": \"/m/01zbnw\",\n      \"description\": \"Screenshot\",\n      \"score\": 0.661579430103302,\n      \"topicality\": 0.661579430103302\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.5821748375892639,\n      \"topicality\": 0.5821748375892639\n    },\n    {\n      \"mid\": \"/m/0641k\",\n      \"description\": \"Paper\",\n      \"score\": 0.5699952244758606,\n      \"topicality\": 0.5699952244758606\n    },\n    {\n      \"mid\": \"/m/0hwky\",\n      \"description\": \"Pattern\",\n      \"score\": 0.5630630254745483,\n      \"topicality\": 0.5630630254745483\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.5535141825675964,\n      \"topicality\": 0.5535141825675964\n    },\n    {\n      \"mid\": \"/m/0h8p59j\",\n      \"description\": \"Paper product\",\n      \"score\": 0.5328884124755859,\n      \"topicality\": 0.5328884124755859\n    },\n    {\n      \"mid\": \"/m/015bv3\",\n      \"description\": \"Document\",\n      \"score\": 0.5019869804382324,\n      \"topicality\": 0.5019869804382324\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/953b7fe8ab36f73029d6df6b1f93bf14-320-80.jpg",
+    "created_at": "2019-09-08T12:41:15.611Z",
+    "updated_at": "2019-09-08T12:41:15.611Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 98,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/088fh\",\n      \"description\": \"Yellow\",\n      \"score\": 0.9218151569366455,\n      \"topicality\": 0.9218151569366455\n    },\n    {\n      \"mid\": \"/m/04n0b__\",\n      \"description\": \"Brain\",\n      \"score\": 0.9131025075912476,\n      \"topicality\": 0.9131025075912476\n    },\n    {\n      \"mid\": \"/m/05nnm\",\n      \"description\": \"Organism\",\n      \"score\": 0.7941054701805115,\n      \"topicality\": 0.7941054701805115\n    },\n    {\n      \"mid\": \"/m/01kr8f\",\n      \"description\": \"Illustration\",\n      \"score\": 0.7639288306236267,\n      \"topicality\": 0.7639288306236267\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.6857237815856934,\n      \"topicality\": 0.6857237815856934\n    },\n    {\n      \"mid\": \"/m/017cc\",\n      \"description\": \"Brain\",\n      \"score\": 0.6166035532951355,\n      \"topicality\": 0.6166035532951355\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.6134564280509949,\n      \"topicality\": 0.6134564280509949\n    }\n  ]\n}",
+    "url": "https://tutorialzine.com/media/2017/04/brain.jpg",
+    "created_at": "2019-09-08T16:54:38.781Z",
+    "updated_at": "2019-09-08T16:54:38.781Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 101,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9638836979866028,\n      \"topicality\": 0.9638836979866028\n    },\n    {\n      \"mid\": \"/m/01g5v\",\n      \"description\": \"Blue\",\n      \"score\": 0.926959753036499,\n      \"topicality\": 0.926959753036499\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.871282696723938,\n      \"topicality\": 0.871282696723938\n    },\n    {\n      \"mid\": \"/m/01zbnw\",\n      \"description\": \"Screenshot\",\n      \"score\": 0.6214386820793152,\n      \"topicality\": 0.6214386820793152\n    }\n  ]\n}",
+    "url": "https://www.orbitmedia.com/wp-content/uploads/2015/11/phone.png",
+    "created_at": "2019-09-09T08:14:39.990Z",
+    "updated_at": "2019-09-09T08:14:39.990Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 102,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9218224883079529,\n      \"topicality\": 0.9218224883079529\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.8314544558525085,\n      \"topicality\": 0.8314544558525085\n    },\n    {\n      \"mid\": \"/m/02cwm\",\n      \"description\": \"Design\",\n      \"score\": 0.7301200032234192,\n      \"topicality\": 0.7301200032234192\n    },\n    {\n      \"mid\": \"/m/01zbnw\",\n      \"description\": \"Screenshot\",\n      \"score\": 0.7204915285110474,\n      \"topicality\": 0.7204915285110474\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.6009798049926758,\n      \"topicality\": 0.6009798049926758\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.565345048904419,\n      \"topicality\": 0.565345048904419\n    },\n    {\n      \"mid\": \"/m/0hwky\",\n      \"description\": \"Pattern\",\n      \"score\": 0.5630630254745483,\n      \"topicality\": 0.5630630254745483\n    }\n  ]\n}",
+    "url": "https://www.orbitmedia.com/wp-content/uploads/2015/11/social.png",
+    "created_at": "2019-09-09T08:19:09.158Z",
+    "updated_at": "2019-09-09T08:19:09.158Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 103,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9730345010757446,\n      \"topicality\": 0.9730345010757446\n    },\n    {\n      \"mid\": \"/m/088fh\",\n      \"description\": \"Yellow\",\n      \"score\": 0.9355567693710327,\n      \"topicality\": 0.9355567693710327\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9322887063026428,\n      \"topicality\": 0.9322887063026428\n    },\n    {\n      \"mid\": \"/m/03scnj\",\n      \"description\": \"Line\",\n      \"score\": 0.807834804058075,\n      \"topicality\": 0.807834804058075\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.5202584266662598,\n      \"topicality\": 0.5202584266662598\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/02ac6753587d272fa0e4c3aa8cb3159b-650-80.jpg",
+    "created_at": "2019-09-09T08:21:22.706Z",
+    "updated_at": "2019-09-09T08:21:22.706Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 104,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9730345010757446,\n      \"topicality\": 0.9730345010757446\n    },\n    {\n      \"mid\": \"/m/088fh\",\n      \"description\": \"Yellow\",\n      \"score\": 0.9355567693710327,\n      \"topicality\": 0.9355567693710327\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9322887063026428,\n      \"topicality\": 0.9322887063026428\n    },\n    {\n      \"mid\": \"/m/03scnj\",\n      \"description\": \"Line\",\n      \"score\": 0.807834804058075,\n      \"topicality\": 0.807834804058075\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.5202584266662598,\n      \"topicality\": 0.5202584266662598\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/02ac6753587d272fa0e4c3aa8cb3159b-650-80.jpg",
+    "created_at": "2019-09-09T08:24:24.384Z",
+    "updated_at": "2019-09-09T08:24:24.384Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 105,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9705037474632263,\n      \"topicality\": 0.9705037474632263\n    },\n    {\n      \"mid\": \"/m/0jc_p\",\n      \"description\": \"Orange\",\n      \"score\": 0.9547753930091858,\n      \"topicality\": 0.9547753930091858\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9472960829734802,\n      \"topicality\": 0.9472960829734802\n    },\n    {\n      \"mid\": \"/m/06fvc\",\n      \"description\": \"Red\",\n      \"score\": 0.9468913674354553,\n      \"topicality\": 0.9468913674354553\n    },\n    {\n      \"mid\": \"/m/02mrp\",\n      \"description\": \"Electronics\",\n      \"score\": 0.8846179246902466,\n      \"topicality\": 0.8846179246902466\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.8441151976585388,\n      \"topicality\": 0.8441151976585388\n    },\n    {\n      \"mid\": \"/m/0bkqqh\",\n      \"description\": \"Signage\",\n      \"score\": 0.8081792593002319,\n      \"topicality\": 0.8081792593002319\n    },\n    {\n      \"mid\": \"/m/03c31\",\n      \"description\": \"Graphic design\",\n      \"score\": 0.806789755821228,\n      \"topicality\": 0.806789755821228\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.7735077142715454,\n      \"topicality\": 0.7735077142715454\n    },\n    {\n      \"mid\": \"/m/02cwm\",\n      \"description\": \"Design\",\n      \"score\": 0.7596908211708069,\n      \"topicality\": 0.7596908211708069\n    }\n  ]\n}",
+    "url": "https://www.orbitmedia.com/wp-content/uploads/2015/11/email-signup-footer.png",
+    "created_at": "2019-09-09T08:29:47.754Z",
+    "updated_at": "2019-09-09T08:29:47.754Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 106,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/019sc\",\n      \"description\": \"Black\",\n      \"score\": 0.9449019432067871,\n      \"topicality\": 0.9449019432067871\n    },\n    {\n      \"mid\": \"/m/01cbzq\",\n      \"description\": \"Rock\",\n      \"score\": 0.7335856556892395,\n      \"topicality\": 0.7335856556892395\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/220b0c5b6e60a6bc1100e0ff3cf4a151-650-80.jpg",
+    "created_at": "2019-09-09T08:45:35.341Z",
+    "updated_at": "2019-09-09T08:45:35.341Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 107,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/038hg\",\n      \"description\": \"Green\",\n      \"score\": 0.9620494246482849,\n      \"topicality\": 0.9620494246482849\n    },\n    {\n      \"mid\": \"/m/08t9c_\",\n      \"description\": \"Grass\",\n      \"score\": 0.6880232691764832,\n      \"topicality\": 0.6880232691764832\n    },\n    {\n      \"mid\": \"/m/03bt1gh\",\n      \"description\": \"Games\",\n      \"score\": 0.6313320398330688,\n      \"topicality\": 0.6313320398330688\n    },\n    {\n      \"mid\": \"/m/030zfn\",\n      \"description\": \"Parallel\",\n      \"score\": 0.5512034296989441,\n      \"topicality\": 0.5512034296989441\n    }\n  ]\n}",
+    "url": "https://tutorialzine.com/media/2017/04/flappy-learning.jpg",
+    "created_at": "2019-09-09T08:53:21.508Z",
+    "updated_at": "2019-09-09T08:53:21.508Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 109,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9705037474632263,\n      \"topicality\": 0.9705037474632263\n    },\n    {\n      \"mid\": \"/m/0jc_p\",\n      \"description\": \"Orange\",\n      \"score\": 0.9547753930091858,\n      \"topicality\": 0.9547753930091858\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9472960829734802,\n      \"topicality\": 0.9472960829734802\n    },\n    {\n      \"mid\": \"/m/06fvc\",\n      \"description\": \"Red\",\n      \"score\": 0.9468913674354553,\n      \"topicality\": 0.9468913674354553\n    },\n    {\n      \"mid\": \"/m/02mrp\",\n      \"description\": \"Electronics\",\n      \"score\": 0.8846179246902466,\n      \"topicality\": 0.8846179246902466\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.8441151976585388,\n      \"topicality\": 0.8441151976585388\n    },\n    {\n      \"mid\": \"/m/0bkqqh\",\n      \"description\": \"Signage\",\n      \"score\": 0.8081792593002319,\n      \"topicality\": 0.8081792593002319\n    },\n    {\n      \"mid\": \"/m/03c31\",\n      \"description\": \"Graphic design\",\n      \"score\": 0.806789755821228,\n      \"topicality\": 0.806789755821228\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.7735077142715454,\n      \"topicality\": 0.7735077142715454\n    },\n    {\n      \"mid\": \"/m/02cwm\",\n      \"description\": \"Design\",\n      \"score\": 0.7596908211708069,\n      \"topicality\": 0.7596908211708069\n    }\n  ]\n}",
+    "url": "https://www.orbitmedia.com/wp-content/uploads/2015/11/email-signup-footer.png",
+    "created_at": "2019-09-09T09:08:14.921Z",
+    "updated_at": "2019-09-09T09:08:14.921Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 110,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9785385131835938,\n      \"topicality\": 0.9785385131835938\n    },\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9713951945304871,\n      \"topicality\": 0.9713951945304871\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.8961909413337708,\n      \"topicality\": 0.8961909413337708\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.7673503756523132,\n      \"topicality\": 0.7673503756523132\n    },\n    {\n      \"mid\": \"/m/021sdg\",\n      \"description\": \"Graphics\",\n      \"score\": 0.6969752907752991,\n      \"topicality\": 0.6969752907752991\n    },\n    {\n      \"mid\": \"/m/0m9cj\",\n      \"description\": \"Banner\",\n      \"score\": 0.6192736625671387,\n      \"topicality\": 0.6192736625671387\n    },\n    {\n      \"mid\": \"/m/07d0f\",\n      \"description\": \"Trademark\",\n      \"score\": 0.5534408688545227,\n      \"topicality\": 0.5534408688545227\n    }\n  ]\n}",
+    "url": "https://tutorialzine.com/media/2017/04/convnetjs.png",
+    "created_at": "2019-09-09T09:35:56.231Z",
+    "updated_at": "2019-09-09T09:35:56.231Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 114,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9705037474632263,\n      \"topicality\": 0.9705037474632263\n    },\n    {\n      \"mid\": \"/m/0jc_p\",\n      \"description\": \"Orange\",\n      \"score\": 0.9547753930091858,\n      \"topicality\": 0.9547753930091858\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.9472960829734802,\n      \"topicality\": 0.9472960829734802\n    },\n    {\n      \"mid\": \"/m/06fvc\",\n      \"description\": \"Red\",\n      \"score\": 0.9468913674354553,\n      \"topicality\": 0.9468913674354553\n    },\n    {\n      \"mid\": \"/m/02mrp\",\n      \"description\": \"Electronics\",\n      \"score\": 0.8846179246902466,\n      \"topicality\": 0.8846179246902466\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.8441151976585388,\n      \"topicality\": 0.8441151976585388\n    },\n    {\n      \"mid\": \"/m/0bkqqh\",\n      \"description\": \"Signage\",\n      \"score\": 0.8081792593002319,\n      \"topicality\": 0.8081792593002319\n    },\n    {\n      \"mid\": \"/m/03c31\",\n      \"description\": \"Graphic design\",\n      \"score\": 0.806789755821228,\n      \"topicality\": 0.806789755821228\n    },\n    {\n      \"mid\": \"/m/0dwx7\",\n      \"description\": \"Logo\",\n      \"score\": 0.7735077142715454,\n      \"topicality\": 0.7735077142715454\n    },\n    {\n      \"mid\": \"/m/02cwm\",\n      \"description\": \"Design\",\n      \"score\": 0.7596908211708069,\n      \"topicality\": 0.7596908211708069\n    }\n  ]\n}",
+    "url": "https://www.orbitmedia.com/wp-content/uploads/2015/11/email-signup-footer.png",
+    "created_at": "2019-09-09T10:34:06.114Z",
+    "updated_at": "2019-09-09T10:34:06.114Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 116,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/09j5n\",\n      \"description\": \"Footwear\",\n      \"score\": 0.9864742159843445,\n      \"topicality\": 0.9864742159843445\n    },\n    {\n      \"mid\": \"/m/06rrc\",\n      \"description\": \"Shoe\",\n      \"score\": 0.9449818730354309,\n      \"topicality\": 0.9449818730354309\n    },\n    {\n      \"mid\": \"/m/09kjlm\",\n      \"description\": \"Sneakers\",\n      \"score\": 0.7155151963233948,\n      \"topicality\": 0.7155151963233948\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.6857237815856934,\n      \"topicality\": 0.6857237815856934\n    },\n    {\n      \"mid\": \"/m/01cd9\",\n      \"description\": \"Brand\",\n      \"score\": 0.6472205519676208,\n      \"topicality\": 0.6472205519676208\n    },\n    {\n      \"mid\": \"/m/0hgrj75\",\n      \"description\": \"Outdoor shoe\",\n      \"score\": 0.5270642042160034,\n      \"topicality\": 0.5270642042160034\n    },\n    {\n      \"mid\": \"/m/027k4k\",\n      \"description\": \"Athletic shoe\",\n      \"score\": 0.518602728843689,\n      \"topicality\": 0.518602728843689\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/wiyFjnFNN6Kz7zX4KUkR4R-650-80.png",
+    "created_at": "2019-09-10T09:23:10.947Z",
+    "updated_at": "2019-09-10T09:23:10.947Z",
+    "user": 6
+  }
+},
+{
+  "model": "scraper.document",
+  "pk": 126,
+  "fields": {
+    "document": "{\n  \"labelAnnotations\": [\n    {\n      \"mid\": \"/m/07s6nbt\",\n      \"description\": \"Text\",\n      \"score\": 0.9535306096076965,\n      \"topicality\": 0.9535306096076965\n    },\n    {\n      \"mid\": \"/m/03gq5hm\",\n      \"description\": \"Font\",\n      \"score\": 0.804016649723053,\n      \"topicality\": 0.804016649723053\n    },\n    {\n      \"mid\": \"/m/01zbnw\",\n      \"description\": \"Screenshot\",\n      \"score\": 0.7204915285110474,\n      \"topicality\": 0.7204915285110474\n    }\n  ]\n}",
+    "url": "https://cdn.mos.cms.futurecdn.net/e530ec2c4c00a411b2149cc45675feba-650-80.jpg",
+    "created_at": "2019-09-11T13:34:37.593Z",
+    "updated_at": "2019-09-11T13:34:37.593Z",
+    "user": 6
+  }
+}
+]
